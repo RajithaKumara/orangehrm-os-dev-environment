@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
 		libicu-dev \
 		libpq-dev \
         nano \
+		vim \
         git \
 	&& docker-php-ext-install -j$(nproc) xmlrpc \
 	    zip \
@@ -25,6 +26,7 @@ RUN apt-get update && apt-get install -y \
 	&& docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
 	&& docker-php-ext-install -j$(nproc) gd
 
+COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 RUN apt-get update && apt-get install -y tzdata
 

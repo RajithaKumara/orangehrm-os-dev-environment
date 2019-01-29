@@ -13,6 +13,8 @@ RUN apt-get update && apt-get install -y \
 		libpq-dev \
 		locales \
 		nano \
+		vim \
+		git \
 	&& docker-php-ext-install -j$(nproc) xmlrpc \
 	    zip \
 	    intl \
