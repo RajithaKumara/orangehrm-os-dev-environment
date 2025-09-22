@@ -9,7 +9,7 @@ This project will facilitate inbuilt development environment for developers and 
  - Docker
  - Docker compose 
  - Nginx
- - PHP 5.6, PHP 7.0, PHP 7.1, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3
+ - PHP 5.6, PHP 7.0, PHP 7.1, PHP 7.2, PHP 7.3, PHP 7.4, PHP 8.0, PHP 8.1, PHP 8.2, PHP 8.3, PHP 8.4
 
 ### Installation:
  1. Clone this project
@@ -17,7 +17,7 @@ This project will facilitate inbuilt development environment for developers and 
  1. update /etc/hosts file with following line
  __Example:__
  ```bash
- 127.0.0.1	php56 php70 php71 php72 php73 php74 php80 php81 php82 php83
+ 127.0.0.1	php56 php70 php71 php72 php73 php74 php80 php81 php82 php83 php84
  ```
 
  > Read the full guide [here](https://github.com/orangehrm/orangehrm-os-dev-environment/wiki/How-to-setup).
@@ -48,6 +48,7 @@ docker compose stop
 
 | PHP Version | Host         | Start command            |
 |-------------|--------------|--------------------------|
+| PHP 8.4     | http://php84 | `$ bash ./scripts/php84` |
 | PHP 8.3     | http://php83 | `$ bash ./scripts/php83` |
 | PHP 8.2     | http://php82 | `$ bash ./scripts/php82` |
 | PHP 8.1     | http://php81 | `$ bash ./scripts/php81` |

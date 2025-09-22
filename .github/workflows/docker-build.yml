@@ -14,7 +14,10 @@ jobs:
       - name: Run build
         run: |
           cat .env.dist > .env
-          docker-compose build
+          docker compose build
+
+      - name: Up PHP 8.4
+        run: ./scripts/php84
 
       - name: Up PHP 8.3
         run: ./scripts/php83

@@ -1,4 +1,4 @@
-FROM php:8.3-fpm
+FROM php:8.4-fpm
 
 COPY config/php.ini /usr/local/etc/php/
 
@@ -35,7 +35,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 SHELL ["/bin/bash", "--login", "-c"]
 
-ENV NODE_VERSION 22
+ENV NODE_VERSION 24
 
 RUN cd ~ \
 	&& curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash \
