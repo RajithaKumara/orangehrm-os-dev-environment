@@ -38,7 +38,7 @@ SHELL ["/bin/bash", "--login", "-c"]
 ENV NODE_VERSION 20
 
 RUN cd ~ \
-	&& curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash \
+	&& curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash \
 	&& . $HOME/.nvm/nvm.sh \
 	&& nvm install $NODE_VERSION \
 	&& nvm alias default $NODE_VERSION \
