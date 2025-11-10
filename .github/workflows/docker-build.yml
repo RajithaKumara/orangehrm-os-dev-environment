@@ -34,6 +34,9 @@ jobs:
       - name: Up PHP 7.4
         run: ./scripts/php74
 
+      - name: Dry run
+        run: docker compose --dry-run up -d
+
   # build-legacy:
   #   runs-on: ubuntu-latest
 
